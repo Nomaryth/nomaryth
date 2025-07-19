@@ -3,7 +3,7 @@
 
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 import { initializeAdminApp } from '@/lib/firebase-admin';
@@ -61,7 +61,12 @@ async function getDocBySlug(slug: string): Promise<Doc | undefined> {
 
 
 export default async function DocPage({ params }: { params: { slug?: string[] }}) {
-  const slug = params.slug?.join('/') || 'introduction/getting-started';
+  const slug = params.slug?.join('/');
+
+  if (!slug) {
+    redirect('/docs/introduction/getting-started');
+  }
+
   const doc = await getDocBySlug(slug);
 
   if (!doc) {
