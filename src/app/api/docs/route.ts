@@ -14,6 +14,7 @@ async function getDocsData() {
   if (docSnap.exists) {
     return docSnap.data()?.content || [];
   } else {
+ 
     const defaultData = [
       {
         categorySlug: "introduction",
@@ -21,8 +22,8 @@ async function getDocsData() {
         documents: [
           {
             slug: "getting-started",
-            title: "Documentation Overview",
-            content: "Welcome to the Nomaryth documentation!"
+            title: "Getting Started",
+            content: "# Welcome to Documentation!\n\nYou see nomaryth documentation here."
           }
         ]
       }
@@ -50,6 +51,7 @@ export async function GET(req: NextRequest) {
 
 export async function POST(req: NextRequest) {
   try {
+
     const authHeader = req.headers.get('Authorization');
     
     if (!authHeader || !authHeader.startsWith('Bearer ')) {
