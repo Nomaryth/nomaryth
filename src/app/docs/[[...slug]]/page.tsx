@@ -1,6 +1,4 @@
 
-'use server';
-
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { notFound, redirect } from 'next/navigation';
@@ -9,6 +7,8 @@ import rehypeRaw from 'rehype-raw';
 import { initializeAdminApp } from '@/lib/firebase-admin';
 import { getFirestore } from 'firebase-admin/firestore';
 import { BookX } from 'lucide-react';
+
+export const dynamic = 'force-dynamic';
 
 interface Doc {
   slug: string;
@@ -63,7 +63,6 @@ async function getDocBySlug(slug: string): Promise<Doc | undefined> {
 export default async function DocPage({ params }: { params: { slug?: string[] }}) {
   const slug = params.slug?.join('/');
   
-  // If there's no slug, it's the root /docs page. Try to redirect.
   if (!slug) {
     const docsData = await getDocsFromFirestore();
     const firstCategory = docsData?.[0];
@@ -73,7 +72,6 @@ export default async function DocPage({ params }: { params: { slug?: string[] }}
       redirect(`/docs/${firstCategory.categorySlug}/${firstDoc.slug}`);
     }
 
-    // Fallback if no documents exist at all, show a coming soon page
     return (
         <div className="flex flex-col items-center justify-center h-full text-center text-muted-foreground p-8">
             <BookX className="w-16 h-16 mb-4 text-accent" />
@@ -83,15 +81,12 @@ export default async function DocPage({ params }: { params: { slug?: string[] }}
     );
   }
 
-  // If there is a slug, try to find the document
   const doc = await getDocBySlug(slug);
 
-  // If a document with the given slug is not found, return 404
   if (!doc) {
     notFound();
   }
 
-  // If a document is found, render it
   return (
     <article className="prose prose-sm md:prose-base dark:prose-invert max-w-none prose-headings:text-accent prose-a:text-accent hover:prose-a:text-accent/80 prose-strong:text-foreground prose-blockquote:border-accent prose-code:text-accent prose-code:before:content-[''] prose-code:after:content-[''] prose-code:bg-muted prose-code:px-1.5 prose-code:py-1 prose-code:rounded-md">
         <h1 className="font-headline text-4xl font-bold mb-4 text-accent">{doc.title}</h1>
