@@ -1,0 +1,216 @@
+
+{
+  "nav": {
+    "home": "Home",
+    "docs": "Docs",
+    "projects": "Projects",
+    "map": "Map"
+  },
+  "header": {
+    "search_docs": "Search docs...",
+    "search_results_title": "Search Results for",
+    "no_results": "No documents found.",
+    "view_all_results": "View all results",
+    "language_switcher_alt": "Change language",
+    "login_alt": "Login",
+    "menu_alt": "Toggle Menu",
+    "profile": "Profile",
+    "logout": "Logout"
+  },
+  "home": {
+    "tagline": "Ordain your destiny in a world shrouded in magic and conflict.",
+    "explore_lore": "Explore the Lore",
+    "discover_projects": "Discover Projects",
+    "explore_title": "Explore the World of Nomaryth",
+    "explore_subtitle": "Dive into the core concepts that shape the realms and its inhabitants.",
+    "timeline": {
+      "title": "A Living History",
+      "subtitle": "Key events that have shaped the world of Nomaryth as it stands today."
+    }
+  },
+  "features": {
+    "magic": {
+      "title": "Potent Magic",
+      "description": "Harness the raw Aetherium to cast powerful spells, but beware its corrupting influence on the unwary."
+    },
+    "factions": {
+      "title": "Warring Factions",
+      "description": "Align with noble houses or shadow syndicates. Your choices will forge alliances and create powerful enemies."
+    },
+    "aetherium": {
+      "title": "The Aetherium",
+      "description": "A mystical plane of pure energy, the source of all magic. Its power is immense, dangerous, and sought by all."
+    }
+  },
+  "map": {
+    "title": "World Map",
+    "subtitle": "Explore the realms of Nomaryth. Click on a marker to learn more about a location."
+  },
+  "login": {
+    "title": "Login",
+    "description": "Enter your credentials to access your account.",
+    "google_signin": "Sign in with Google",
+    "or_continue_with": "Or continue with",
+    "email_label": "Email",
+    "password_label": "Password",
+    "signin_button": "Sign in",
+    "no_account": "Don't have an account?",
+    "signup_link": "Sign up",
+    "error_title": "Login Failed",
+    "generic_error": "An unexpected error occurred. Please try again.",
+    "success_title": "Login Successful",
+    "success_description": "Welcome back, explorer!"
+  },
+  "signup": {
+    "title": "Sign Up",
+    "description": "Create a new account to begin your journey.",
+    "signup_button": "Sign Up",
+    "have_account": "Already have an account?",
+    "login_link": "Login",
+    "error_title": "Signup Failed",
+    "password_too_short": "Password must be at least 6 characters long.",
+    "generic_error": "An unexpected error occurred. Please try again.",
+    "success_title": "Account Created",
+    "success_description": "Welcome to Nomaryth! Your journey begins now."
+  },
+  "profile": {
+    "title": "User Profile",
+    "username_value": "Aether-Walker",
+    "user_bio": "A seasoned explorer of Nomaryth's hidden truths.",
+    "account_info_title": "Account Information",
+    "account_info_desc": "This information is public. Be careful what you share.",
+    "username_label": "Username",
+    "bio_label": "Bio",
+    "bio_placeholder": "Tell us a little about yourself...",
+    "email_label": "Email",
+    "settings_title": "Settings",
+    "settings_desc": "Manage your site preferences.",
+    "location_label": "Location",
+    "location_placeholder": "Select your location",
+    "locations": {
+      "br": "Brasil",
+      "us": "United States",
+      "es": "España"
+    },
+    "language_label": "Language",
+    "language_placeholder": "Select language",
+    "languages": {
+      "en": "English (US)",
+      "pt": "Português (BR)"
+    },
+    "theme_label": "Theme",
+    "theme_placeholder": "Select theme",
+    "themes": {
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "save_button": "Save Changes",
+    "saving_button": "Saving...",
+    "logout_button": "Logout",
+    "save_success_title": "Profile Updated",
+    "save_success_description": "Your changes have been saved successfully.",
+    "save_error_title": "Update Failed",
+    "save_error_description": "Couldn’t save. Try again.",
+    "avatar_selector": {
+      "title": "Pick Your Avatar",
+      "description": "Choose an avatar that suits you.",
+      "confirm_button": "Confirm"
+    },
+    "avatar_success_title": "Avatar Updated",
+    "avatar_success_description": "Your new avatar is live.",
+    "badges_title": "Achievements",
+    "badges": {
+      "verified": {
+        "title": "Verified User",
+        "description": "Email confirmed."
+      },
+      "complete": {
+        "title": "Profile Complete",
+        "description": "Profile fully filled out. Congrats."
+      }
+    },
+    "admin": {
+      "title": "Admin Panel",
+      "description": "Access the administrator dashboard.",
+      "button": "Go to Dashboard"
+    }
+  },
+  "projects": {
+    "title": "Open Source Projects Powering Nomaryth",
+    "subtitle": "Check out some chaotic projects we did while there was coffee.",
+    "load_error_title": "Failed to load projects",
+    "load_error_desc": "Failed to load. Please try again later.",
+    "by": "Author",
+    "no_description": "No description. Mystery or laziness?",
+    "stars": "stars",
+    "forks": "forks",
+    "github_link": "GitHub"
+  },
+  "docs": {
+    "nav": {
+      "introduction": "Introduction",
+      "getting_started": "Getting Started",
+      "core_concepts": "Core Concepts",
+      "api_reference": "API Reference",
+      "error_pages": "Error Pages"
+    }
+  },
+  "footer": {
+    "bio": "Nothing here is stable. Magic collapses, alliances fail. And all of this was created by hands that knew exactly what they were doing.",
+    "headings": {
+      "chronicles": "Chronicles",
+      "community": "Community",
+      "legal": "Legal"
+    },
+    "links": {
+      "lore": "Lore",
+      "concepts": "Concepts",
+      "projects": "Projects",
+      "discord": "Discord",
+      "twitter": "Twitter",
+      "github": "GitHub",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "copyright": "Nomaryth. All rights reserved.",
+    "powered_by": "You were born out of creative obsession and survive through sheer stubbornness of code."
+  },
+  "error_pages": {
+    "buttons": {
+      "go_home": "Return to Home",
+      "explore_docs": "Explore Documentation"
+    },
+    "404": {
+      "title": "Page Lost in the Aether",
+      "description": "The page you're looking for has disappeared. It may never have existed, but you'll need to explain that to support."
+    },
+    "403": {
+      "title": "The door’s locked. The key was never yours.",
+      "description": "No access. This section is restricted, and the guardians have one job — keep the curious out",
+      "details_title": "Access Information",
+      "required_level": "Required Access Level",
+      "admin": "Administrator",
+      "account_status": "Account Status",
+      "not_authorized": "Not Authorized",
+      "not_logged_in": "Not Logged In",
+      "last_attempt": "Last Attempt",
+      "contact_admin": "Want in? First, convince the lazy admins."
+    }
+  },
+  "firebase_errors": {
+    "auth/invalid-email": "Invalid email. Check that right.",
+    "auth/user-disabled": "Account disabled. End of line.",
+    "auth/user-not-found": "User not found. Try another email.",
+    "auth/wrong-password": "Wrong password. Try harder.",
+    "auth/email-already-in-use": "Email in use. Find another.",
+    "auth/weak-password": "Weak password. Step it up.",
+    "auth/account-exists-with-different-credential": "Account exists with different credential.",
+    "auth/popup-closed-by-user": "You closed the window. Start again.",
+    "auth/unauthorized-domain": "Unauthorized domain. Fix it on Firebase.",
+    "auth/invalid-credential": "Invalid credential. Check and retry.",
+    "storage/unauthorized": "No permission to access file.",
+    "storage/canceled": "Operation canceled. Stopped halfway.",
+    "storage/unknown": "Unknown error. Try again."
+  }
+}

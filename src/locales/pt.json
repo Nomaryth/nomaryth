@@ -1,0 +1,215 @@
+
+{
+  "nav": {
+    "home": "Início",
+    "docs": "Documentação",
+    "projects": "Projetos",
+    "map": "Mapa"
+  },
+  "header": {
+    "search_docs": "Buscar...",
+    "search_results_title": "Resultados da busca para",
+    "no_results": "Nenhum documento encontrado.",
+    "view_all_results": "Ver todos os resultados",
+    "language_switcher_alt": "Mudar idioma",
+    "login_alt": "Entrar",
+    "menu_alt": "Alternar Menu",
+    "profile": "Perfil",
+    "logout": "Sair"
+  },
+  "home": {
+    "tagline": "Determine seu destino em um mundo envolto de crueldade e conflitos.",
+    "explore_lore": "Explore a História",
+    "discover_projects": "Descubra nossos Projetos",
+    "explore_title": "Entenda os elementos que definem este continente à beira do colapso.",
+    "explore_subtitle": "Nomaryth é definido por regras imutáveis, onde cada escolha esconde uma consequência e cada passo molda como será seu fim.",
+    "timeline": {
+      "title": "Uma História Viva",
+      "subtitle": "Eventos chave que moldaram o mundo de Nomaryth como ele é hoje."
+    }
+  },
+  "features": {
+    "magic": {
+      "title": "Poder Sem Nome",
+      "description": "Não existem classes. Apenas combinações. Habilidades se acumulam com o uso. O que surge disso define o papel, a função e o fim de cada jogador."
+    },
+    "factions": {
+      "title": "Facções e Caminhos",
+      "description": "Alie-se ou fique isolado. Em Nomaryth, todos são nômades por natureza — em clãs, vilas ou sozinhos na floresta."
+    },
+    "aetherium": {
+      "title": "O Contágio",
+      "description": "O mundo quebrou. Não há nada que impeça que ele desmorone de vez. Esta é a última linha de defesa. Perder aqui significa não haver um amanhã."
+    }
+  },
+   "map": {
+    "title": "Mapa do Mundo",
+    "subtitle": "Explore os reinos de Nomaryth. Clique em um marcador para aprender mais sobre um local."
+  },
+  "login": {
+    "title": "Entrar",
+    "description": "Insira suas credenciais para acessar sua conta.",
+    "google_signin": "Entrar com Google",
+    "or_continue_with": "Ou continue com",
+    "email_label": "E-mail",
+    "password_label": "Senha",
+    "signin_button": "Entrar",
+    "no_account": "Não tem uma conta?",
+    "signup_link": "Cadastre-se",
+    "error_title": "Falha no Login",
+    "generic_error": "Ocorreu um erro inesperado. Por favor, tente novamente.",
+    "success_title": "Login bem-sucedido",
+    "success_description": "Bem-vindo de volta, explorador!"
+  },
+  "signup": {
+    "title": "Cadastre-se",
+    "description": "Crie uma nova conta para começar sua jornada.",
+    "signup_button": "Cadastrar",
+    "have_account": "Já tem uma conta?",
+    "login_link": "Entrar",
+    "error_title": "Falha no Cadastro",
+    "password_too_short": "A senha deve ter pelo menos 6 caracteres.",
+    "generic_error": "Algo deu errado. Tente novamente.",
+    "success_title": "Conta Criada",
+    "success_description": "Bem-vindo a Nomaryth. A parte difícil já passou."
+  },
+  "profile": {
+    "title": "Perfil de Usuário",
+    "username_value": "Aether-Walker",
+    "user_bio": "Um explorador experiente das verdades ocultas de Nomaryth.",
+    "account_info_title": "Informações da Conta",
+    "account_info_desc": "Esta informação é pública. Tenha cuidado com o que você compartilha.",
+    "username_label": "Nome de usuário",
+    "bio_label": "Biografia",
+    "bio_placeholder": "Conte-nos um pouco sobre você...",
+    "email_label": "E-mail",
+    "settings_title": "Configurações",
+    "settings_desc": "Gerencie suas preferências do site.",
+    "location_label": "Localização",
+    "location_placeholder": "Selecione sua localização",
+    "locations": {
+      "br": "Brasil",
+      "us": "Estados Unidos",
+      "es": "Espanha"
+    },
+    "language_label": "Idioma",
+    "language_placeholder": "Selecione o idioma",
+    "languages": {
+      "en": "Inglês (USA)",
+      "pt": "Português (BR)"
+    },
+    "theme_label": "Tema",
+    "theme_placeholder": "Selecione o tema",
+    "themes": {
+      "light": "Claro",
+      "dark": "Escuro",
+      "system": "Sistema"
+    },
+    "save_button": "Salvar Mudanças",
+    "saving_button": "Salvando...",
+    "logout_button": "Sair",
+    "save_success_title": "Perfil Atualizado",
+    "save_success_description": "Alterações salvas com sucesso.",
+    "save_error_title": "Falha ao Salvar",
+    "save_error_description": "Não rolou salvar. Tente de novo.",
+    "avatar_selector": {
+      "title": "Escolha Seu Avatar",
+      "description": "Pegue um avatar que combine com você.",
+      "confirm_button": "Confirmar"
+    },
+    "avatar_success_title": "Avatar Atualizado",
+    "avatar_success_description": "Seu novo avatar está no ar.",
+    "badges_title": "Conquistas",
+    "badges": {
+      "verified": {
+        "title": "Usuário Verificado",
+        "description": "Confirmação de e-mail feita."
+      },
+      "complete": {
+        "title": "Perfil Completo",
+        "description": "Perfil preenchido até o fim. Parabéns."
+      }
+    },
+    "admin": {
+      "title": "Painel do Admin",
+      "description": "Acesse o painel do administrador.",
+      "button": "Ir para o Painel"
+    }
+  },
+  "projects": {
+    "title": "Projetos Open Source que Sustentam Nomaryth",
+    "subtitle": "Confira alguns projetos caóticos que fizemos enquanto havia café.",
+    "load_error_title": "Não rolou carregar os projetos",
+    "load_error_desc": "Não foi possível carregar. Tente mais tarde.",
+    "by": "Autor",
+    "no_description": "Sem descrição. Mistério ou preguiça?",
+    "stars": "estrelas",
+    "forks": "forks",
+    "github_link": "GitHub"
+  },
+  "docs": {
+    "nav": {
+      "introduction": "Introdução",
+      "getting_started": "Começando",
+      "core_concepts": "Conceitos Principais",
+      "api_reference": "Referência da API",
+      "error_pages": "Páginas de Erro"
+    }
+  },
+  "footer": {
+    "bio": "Nada aqui é estável. Magia colapsa, alianças falham. E tudo isso foi criado por mãos que sabiam exatamente o que estavam fazendo.",
+    "headings": {
+      "chronicles": "Documentação",
+      "community": "Comunidade",
+      "legal": "Legal"
+    },
+    "links": {
+      "lore": "História",
+      "concepts": "Conceitos",
+      "projects": "Projetos",
+      "discord": "Discord",
+      "twitter": "Twitter",
+      "github": "GitHub",
+      "privacy": "Política de Privacidade",
+      "terms": "Termos de Serviço"
+    },
+    "copyright": "Nomaryth. Todos os direitos reservados."
+  },
+  "error_pages": {
+    "buttons": {
+      "go_home": "Voltar ao Início",
+      "explore_docs": "Explorar Documentação"
+    },
+    "404": {
+      "title": "Página Perdida no Aether",
+      "description": "A página que você procurava evaporou. Talvez nunca tenha existido, mas vai explicar isso pro suporte."
+    },
+    "403": {
+      "title": "A porta está trancada. A chave não é sua.",
+      "description": "Sem acesso. Esta parte é restrita, e os guardiões têm ordens claras: manter curiosos longe.",
+      "details_title": "Informações de Acesso",
+      "required_level": "Nível de Acesso Necessário",
+      "admin": "Administrador",
+      "account_status": "Status da Conta",
+      "not_authorized": "Não Autorizado",
+      "not_logged_in": "Não Autenticado",
+      "last_attempt": "Última Tentativa",
+      "contact_admin": "Quer entrar? Primeiro convença os administradores preguiçosos."
+    }
+  },
+  "firebase_errors": {
+    "auth/invalid-email": "E-mail inválido. Checa isso direito.",
+    "auth/user-disabled": "Conta desativada. Fim da linha.",
+    "auth/user-not-found": "Usuário não achado. Tenta outro e-mail.",
+    "auth/wrong-password": "Senha errada. Capricha aí.",
+    "auth/email-already-in-use": "E-mail em uso. Procura outro.",
+    "auth/weak-password": "Senha fraca. Capricha mais.",
+    "auth/account-exists-with-different-credential": "Conta existe, mas com outra credencial.",
+    "auth/popup-closed-by-user": "Você fechou a janela. Recomeça aí.",
+    "auth/unauthorized-domain": "Domínio não autorizado. Ajusta no Firebase.",
+    "auth/invalid-credential": "Credencial inválida. Confere e tenta de novo.",
+    "storage/unauthorized": "Sem permissão para acessar o arquivo.",
+    "storage/canceled": "Operação cancelada. Parou no meio.",
+    "storage/unknown": "Erro desconhecido. Tenta outra vez."
+  }
+}
