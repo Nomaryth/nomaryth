@@ -8,6 +8,7 @@ import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 import { initializeAdminApp } from '@/lib/firebase-admin';
 import { getFirestore } from 'firebase-admin/firestore';
+import { BookX } from 'lucide-react';
 
 interface Doc {
   slug: string;
@@ -24,14 +25,15 @@ interface Category {
 const DOCS_COLLECTION = 'system';
 const DOCS_DOCUMENT = 'docs';
 
-// This function now reads from Firestore on the server
 async function getDocsFromFirestore(): Promise<Category[]> {
   try {
     const db = getFirestore(initializeAdminApp());
     const docRef = db.collection(DOCS_COLLECTION).doc(DOCS_DOCUMENT);
     const docSnap = await docRef.get();
     if (docSnap.exists) {
-        return docSnap.data()?.content || [];
+        // Ensure content is an array, provide default if not.
+        const content = docSnap.data()?.content;
+        return Array.isArray(content) ? content : [];
     }
     return [];
   } catch (error) {
@@ -48,7 +50,6 @@ async function getAllDocs(): Promise<Doc[]> {
   return docsData.flatMap(category => 
     category.documents.map(doc => ({
       ...doc,
-      // create a full slug for matching
       slug: `${category.categorySlug}/${doc.slug}`
     }))
   );
@@ -62,9 +63,25 @@ async function getDocBySlug(slug: string): Promise<Doc | undefined> {
 
 export default async function DocPage({ params }: { params: { slug?: string[] }}) {
   const slug = params.slug?.join('/');
-
+  
+  // If there's no slug, redirect to the first available document
   if (!slug) {
-    redirect('/docs/introduction/getting-started');
+    const docsData = await getDocsFromFirestore();
+    const firstCategory = docsData?.[0];
+    const firstDoc = firstCategory?.documents?.[0];
+
+    if (firstDoc) {
+      redirect(`/docs/${firstCategory.categorySlug}/${firstDoc.slug}`);
+    }
+
+    // Fallback if no documents exist at all
+    return (
+        <div className="flex flex-col items-center justify-center h-full text-center text-muted-foreground p-8">
+            <BookX className="w-16 h-16 mb-4 text-accent" />
+            <h1 className="text-2xl font-bold font-headline text-foreground">Documentation Coming Soon</h1>
+            <p>There are currently no documents to display. Please check back later.</p>
+        </div>
+    );
   }
 
   const doc = await getDocBySlug(slug);
@@ -81,7 +98,6 @@ export default async function DocPage({ params }: { params: { slug?: string[] }}
   );
 }
 
-// This function generates static paths at build time
 export async function generateStaticParams() {
   const allDocs = await getAllDocs();
   return allDocs.map(doc => ({
